@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erica Mattsson</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="ericaProfilbildExp.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <nav id="navigation">
+        <header class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <router-link to="/">Hem</router-link>
+
+            <router-link to="/paintings/portraits">Porträtt akryl</router-link>
+
+            <router-link to="/paintings/dots">Dot painting</router-link>
+
+            <router-link to="/paintings/dogs">Hundporträtt</router-link>
+
+            <router-link to="/contact">Kontakt</router-link>
+          </div>
+        </header>
+      </nav>
+
+      <router-view></router-view>
+
+      <footer>
+        <a href="#top">Till sidans topp</a>
+        <a href="https://www.instagram.com/erica.mattsson/" target="_blank"
+          ><img
+            id="instagramLogo"
+            src="Pictures/instagramLogo3.png"
+            alt="bild instagram logga"
+            style="width: 2em; margin: 5px"
+        /></a>
+      </footer>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script> -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+@font-face {
+  font-family: Suse;
+  src: url(SUSE-VariableFont_wght.ttf) format('truetype');
+}
+
+* {
+  font-family: Suse;
+}
+
+body {
+  background-image: linear-gradient(180deg, #d6c397, #dbcfb0);
+  /* background-image: url(Pictures/bakgrundsbildGul.png); */
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid green; */
+}
+#app {
+  background-image: linear-gradient(180deg, #d6c397, #dbcfb0);
+  /* background-image: url(Pictures/bakgrundsbildGul.png); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 5px solid green; */
+}
+#navigation {
+  width: 100%;
+}
+article {
+  /* border: 5px solid orange; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  justify-content: space-around;
+}
+figure {
+  display: flex;
+  justify-content: end;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px;
+}
+img {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+  min-width: 30px;
+  margin-bottom: 30px;
+  /* width: 100%; */
+  /* cursor: pointer; */
+  /* border: 1px solid red; */
+}
+.dropbtn {
+  background-color: #dbcfb0;
+  /* background-image: url(Pictures/bakgrundsbildGul.png); */
+  color: #373636;
+  padding: 16px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.dropdown:hover .dropbtn {
+  background-color: #dac9a0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dbcfb0;
+  /* background-image: url(Pictures/bakgrundsbildGul.png); */
+  font-size: 1.3em;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #373636;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #dac9a0;
+  /* background-image: url(Pictures/bakgrundsbildGul.png); */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* main {
+  width: 100%;
+  border: 5px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+h1 {
+  font-size: 1.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #373636;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  /* border: 5px solid green; */
+}
+
+h2 {
+  text-align: center;
+  height: 10%;
+  width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+figcaption {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3em;
+  color: #042307;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 2px solid green; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  align-items: center;
+  /* border: 5px solid brown; */
+}
+
+#namefield {
+  min-width: 100px;
+  cursor: text;
+  margin: 20px;
+  padding: 5px;
+  /* border-radius: 5px; */
+  font-size: 1.2rem;
+  background-color: #ece5d2;
+}
+
+#contactMessage {
+  min-width: 150px;
+  font-size: 1.2rem;
+  margin: 10px;
+  background-color: #ece5d2;
+  cursor: text;
+}
+#submitBtn {
+  width: 100px;
+  font-size: 1.2rem;
+}
+label {
+  margin: 10px;
+  font-size: 1.1rem;
+  width: 75%;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: smaller;
+  width: 98%;
+  /* border: 5px solid yellow; */
+}
+
+footer > a {
+  color: #373636;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    /* border: 5px solid orange; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .zoom {
+    transition: transform 0.4s; /* Animation */
+  }
+
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  article {
+    /* border: 5px solid orange; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .zoom {
+    transition: transform 0.4s; /* Animation */
+  }
+
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+}
