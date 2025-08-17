@@ -33,15 +33,15 @@ body {
 article {
   /* border: 5px solid orange; */
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 figure {
   display: flex;
-  justify-content: end;
+  /* justify-content: end; */
   /* flex-direction: column; */
   align-items: center;
   justify-content: space-between;
@@ -215,14 +215,14 @@ footer > a {
 }
 
 @media screen and (max-width: 600px) {
-  article {
-    /* border: 5px solid orange; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
+  figure {
+    /* justify-content: end; */
+    /* flex-direction: column; */
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 25px;
   }
   .zoom {
     transition: transform 0.4s; /* Animation */
@@ -234,14 +234,15 @@ footer > a {
 }
 
 @media screen and (min-width: 600px) {
-  article {
-    /* border: 5px solid orange; */
-    width: 100%;
+  figure {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: end; */
+    /* flex-direction: column; */
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 25px;
   }
 
   .zoom {
