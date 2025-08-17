@@ -8,7 +8,6 @@ const Home = {
   <h1 id="mainTitle">Erica Mattsson</h1>
       <h2>Delar mina experiment i min utveckling i konst❣</h2>
       <img :src="imageSrc" alt="Akryl tavla självporträtt"/>
-      <figcaption>Första självporträtt. </figcaption> 
       `,
 };
 
